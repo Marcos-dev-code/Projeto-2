@@ -21,7 +21,7 @@ figcaption, header, hgroup, menu, nav, output, ruby, section, summary, time, mar
     vertical-align:baseline;
 }
 
-/*seção do header */
+/*/////////////////////Início da seção header //////////////////////////*/
 
     /*Conteiner do logo*/
     .container-logo{        
@@ -71,19 +71,67 @@ figcaption, header, hgroup, menu, nav, output, ruby, section, summary, time, mar
             margin: 10px 15px 10px 15px;
             list-style-type:none;
         }
+/*/////////////////////fim seção do header ///////////////////////////*/
+
+/*/////////////////////Início da seção Main //////////////////////////*/
+
+    /*container main*/
+    main{ 
+        width:90%;
+        height:700px;
+        margin:auto;
+        border: 1px solid black;
+    }
+
+    h1{
+        font-size: 2.0rem;
+        margin:3.0rem 3.0rem 3.0rem 3.0rem;
+        text-align:center;
+    }
+
+    /*container que engloba o texto e a imagem da caixa de pesquisa.*/
+    .container-caixa-de-pesquisa{
+        display:flex;
+        justify-content: center; /*para centrarlizar a caixa de pesquisa e a imagem da lupa*/
+        margin:auto;
+    }
+
+    /*caixa de pesquisa isolada da imagem*/
+    .container-caixa-de-pesquisa input {
+        border-radius: 18px;        
+        color:black;
+        border:0.5px solid gray;
+        width:50%;
+        height:35px;
+        text-align:center;
+    }
+
+    /*caixa da imagem isolada da caixa de texto*/
+    .container-caixa-de-pesquisa button {
+        margin-left:30px;
+    }
+
+    
+
+
+
+
+
+
 
 
 
 
 
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="container-logo">
             <div class="img-logo"><img src="" alt=""></div>
-            <div class="text-logo"><h1>Oferta maneira</h1></div>         
+            <div class="text-logo"><p>Oferta maneira</p></div>         
         </div>
         <div class="container-navbar">
             <nav>
@@ -95,6 +143,21 @@ figcaption, header, hgroup, menu, nav, output, ruby, section, summary, time, mar
             </nav>
         </div>
     </header>
+    <main>
+        <h1>Encontre o produto desejado e confira todos os detalhes antes de comprar</h1>
+        <div class="container-caixa-de-pesquisa">
+            <input type="text" placeholder="Digite aqui o que você procura">
+            <button type="submit">
+                <span class="fas fa-search"></span>
+            </button>
+        </div>
+
+
+
+
+
+
+    </main>
 
 </body>
 </html>
